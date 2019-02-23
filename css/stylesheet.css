@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: hsl(243, 87%, 12%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h4 {
+  color: hsl(243, 87%, 12%);
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: hsl(0, 0%, 50%);
+}
+
+.main-wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+/* ==============
+img-container
+============== */
+
+.img-container {
+  background-color: hsl(254, 58%, 42%);
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-img {
+  width: 70%;
+}
+
+
+/* ===========================
+navigation bar on the top
+=========================== */
+nav {
+  margin: 2.5rem auto;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.logo-img {
+  flex-grow: 1;
+  display: inline-block;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+
+.icon-img {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.logo {
+  height: 100%;
+}
+
+/* ====================
+content container
+==================== */
+.content-wrapper {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.top-container {
+  width: 55%;
+  margin: 0;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.content {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-layout {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 2px 2px 1px 2px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 0;
+  background-color: hsl(163, 95%, 43%);
+	cursor: pointer;
+	color: #ffffff;
+  margin-left: 1rem;
+  width: 100px;
+}
+
+.btn:active {
+	position:relative;
+	top: 0.2rem;
+}
+
+.text {
+  padding: 0.5rem 1rem;
+  background-color: #FFFFFF;
+  flex-grow: 1;
+  cursor: auto;
+}
+
+
+/* ==========
+footer
+========== */
+.policy {
+  text-align: right;
+  font-size: 0.5rem;
+}
