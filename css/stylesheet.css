@@ -34,7 +34,6 @@ img-container
 
 .main-images {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -53,6 +52,8 @@ nav.lg-nav {
 
 nav.sm-nav {
   z-index: 1;
+  margin: 2rem 3rem;
+  color: white;
 }
 
 ul {
@@ -90,7 +91,6 @@ content container
 
 .top-container {
   width: 55%;
-  margin: 0;
   padding-right: 60px;
   padding-left: 60px;
 }
@@ -110,7 +110,7 @@ content container
 .form-layout {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
-  line-height: 1;
+  line-height: 1rem;
   outline: none;
   border-radius: 6px;
   border: none;
@@ -146,15 +146,12 @@ footer
 .policy {
   text-align: right;
   font-size: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 /* ==========
 media queries
 ========== */
-
-  /* navberを上に　前のをhidden　新しいのをdisplay */
-  /* 背景画像の挿入、　幅いっぱいに広げる */
-  /* 背景画像と中心画像を真ん中に並べる */
 
 @media screen and (max-width: 600px) {
   .main-wrapper {
@@ -166,9 +163,17 @@ media queries
   }
 
   .img-container {
+    box-sizing: border-box;
     width: 100%;
     background: none;
     position: relative;
+  }
+
+  .top-container {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    top: 50px;
   }
 
   .main-bg {
@@ -179,12 +184,24 @@ media queries
     z-index: -1;
   }
 
+  .main-img {
+    width: 60%;
+  }
+
+  .signup-form {
+    justify-content: flex-start;
+  }
+  .text {
+    width: 100%;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
-  .main-wrapper {
-    flex-direction: row;
-  }
   .sm-nav {
     display: none;
   }
@@ -192,5 +209,4 @@ media queries
   .main-bg {
     display: none;
   }
-
 }
