@@ -1,3 +1,40 @@
+/* ==========
+media queries
+========== */
+
+  /* navberを上に　前のをhidden　新しいのをdisplay */
+  /* 背景画像の挿入、　幅いっぱいに広げる */
+  /* 背景画像と中心画像を真ん中に並べる */
+
+@media screen and (max-width: 600px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .lg-nav {
+    display: none;
+  }
+
+  .main-images {
+    background: none;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .main-wrapper {
+    flex-direction: row;
+  }
+  .sm-nav {
+    display: none;
+  }
+
+  .main-bg {
+    display: none;
+  }
+
+}
+
 html, body {
   height: 100%;
 }
@@ -29,9 +66,13 @@ img-container
 .img-container {
   background-color: hsl(254, 58%, 42%);
   width: 45%;
+}
+
+.main-images {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .main-img {
@@ -42,8 +83,12 @@ img-container
 /* ===========================
 navigation bar on the top
 =========================== */
-nav {
+nav.lg-nav {
   margin: 2.5rem auto;
+}
+
+nav.sm-nav {
+
 }
 
 ul {
